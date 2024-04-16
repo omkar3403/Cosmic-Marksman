@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://chi7g8lk61fi"]
+
+[ext_resource type="Script" path="res://scenes/HUD/hud.gd" id="1_gnwko"]
+[ext_resource type="FontFile" uid="uid://bu5rqea3cknxl" path="res://assets/Kenney Future.ttf" id="2_807ss"]
+[ext_resource type="Texture2D" uid="uid://dsbf7icaiu1rb" path="res://assets/grey_sliderLeft.png" id="3_d5pm6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cdkuo"]
+bg_color = Color(1, 1, 1, 0.117647)
+corner_radius_top_left = 50
+corner_radius_top_right = 50
+corner_radius_bottom_right = 50
+corner_radius_bottom_left = 50
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gnwko")
+
+[node name="Panel" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 448.0
+offset_bottom = 88.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cdkuo")
+
+[node name="Score" type="Label" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 64.0
+offset_right = 448.0
+offset_bottom = 64.0
+theme_override_fonts/font = ExtResource("2_807ss")
+theme_override_font_sizes/font_size = 30
+text = "SCORE - 333"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+texture_normal = ExtResource("3_d5pm6")
+stretch_mode = 3
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=3 uid="uid://jmhj5nut5pia"]
+
+[ext_resource type="Script" path="res://scenes/player/Player.gd" id="1_uetym"]
+[ext_resource type="Texture2D" uid="uid://bh435ovm0ffg6" path="res://assets/fire09.png" id="3_al0y8"]
+[ext_resource type="Texture2D" uid="uid://bs5emu32ywmr8" path="res://assets/fire02.png" id="3_bjq5a"]
+[ext_resource type="Texture2D" uid="uid://dxyrkpnv1ytk6" path="res://assets/spaceShips_007.png" id="4_eovmr"]
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 2
+motion_mode = 1
+script = ExtResource("1_uetym")
+
+[node name="ShipThruster" type="Sprite2D" parent="."]
+position = Vector2(-21, 42)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_al0y8")
+
+[node name="ShipThruster2" type="Sprite2D" parent="."]
+position = Vector2(20, 42)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_al0y8")
+
+[node name="BottomLeftThruster" type="Sprite2D" parent="."]
+position = Vector2(-36, 17)
+rotation = 1.0472
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_bjq5a")
+
+[node name="BottomRightThruster" type="Sprite2D" parent="."]
+position = Vector2(37, 17)
+rotation = -1.0472
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_bjq5a")
+
+[node name="Ship" type="Sprite2D" parent="."]
+rotation = 3.14159
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_eovmr")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+scale = Vector2(1e-05, 1e-05)
+polygon = PackedVector2Array(-400000, -1.2e+06, 400000, -1.2e+06, 1e+06, -1.4e+06, 1e+06, -2.6e+06, 1.7e+06, -2.6e+06, 1.7e+06, -1.9e+06, 2e+06, -2.1e+06, 1.9e+06, -2.5e+06, 3.2e+06, -3.8e+06, 4.1e+06, -3.7e+06, 4.3e+06, -2.1e+06, 2.5e+06, -600000, 2.5e+06, 0, 2.3e+06, 200000, 3.2e+06, 1e+06, 2.8e+06, 1.6e+06, 3.4e+06, 3.6e+06, 2.9e+06, 3.8e+06, 2.4e+06, 3e+06, 1.5e+06, 3e+06, 1.3e+06, 2.7e+06, 1.3e+06, 1.6e+06, 600000, 1.2e+06, 400000, 1.5e+06, -400000, 1.5e+06, -600000, 1.2e+06, -1.3e+06, 1.6e+06, -1.2e+06, 2.6e+06, -1.6e+06, 3e+06, -2.5e+06, 3e+06, -2.9e+06, 3.8e+06, -3.4e+06, 3.6e+06, -2.8e+06, 1.6e+06, -3.1e+06, 1e+06, -2.3e+06, 300000, -2.5e+06, 0, -2.5e+06, -600000, -4.3e+06, -2.1e+06, -4.2e+06, -3.7e+06, -3.1e+06, -3.8e+06, -1.9e+06, -2.4e+06, -2.1e+06, -2.1e+06, -1.7e+06, -1.9e+06, -1.7e+06, -2.6e+06, -1e+06, -2.6e+06, -1e+06, -1.5e+06, -700000, -1.3e+06)
+
+[node name="LaserShooter" type="Marker2D" parent="."]
+position = Vector2(-13, -26)
+
+[node name="LaserShooter2" type="Marker2D" parent="."]
+position = Vector2(13, -26)

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://d15kljqxtg3eb"]
+
+[ext_resource type="PackedScene" uid="uid://pd8o55gxrju0" path="res://scenes/enemy/enemy.tscn" id="1_1xxld"]
+[ext_resource type="Texture2D" uid="uid://bs5emu32ywmr8" path="res://assets/fire02.png" id="2_27smo"]
+[ext_resource type="Texture2D" uid="uid://cvvbk4d8x4m6b" path="res://assets/playerShip2_green.png" id="3_lroj2"]
+
+[node name="DiverEnemy" instance=ExtResource("1_1xxld")]
+speed = 600
+hp = 2
+points = 20
+
+[node name="Sprite2D2" type="Sprite2D" parent="." index="0"]
+position = Vector2(0, -44)
+rotation = 3.14159
+texture = ExtResource("2_27smo")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("3_lroj2")
+
+[node name="CollisionPolygon2D" parent="." index="2"]
+scale = Vector2(1e-05, 1e-05)
+polygon = PackedVector2Array(1e+06, -3e+06, -1e+06, -3e+06, -1.3e+06, -2.4e+06, -3e+06, -2.8e+06, -4.5e+06, -400000, -1e+06, 1.4e+06, -400000, 3e+06, 400000, 3e+06, 1.1e+06, 1.4e+06, 4.5e+06, -500000, 3e+06, -2.8e+06, 1.5e+06, -2.4e+06)

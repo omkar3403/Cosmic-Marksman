@@ -1,0 +1,56 @@
+fc8a56933c4b1c8d796fdb8f7a9f9475
+::res://::1713089320
+export_presets.cfg::TextFile::-1::1711050146::0::1::::<><>::
+Gemini_Generated_Image(1).png::CompressedTexture2D::7892111528557979954::1710682622::1711724529::1::::<><>::
+icon.svg::CompressedTexture2D::6622395540946917670::1709968261::1711724529::1::::<><>::
+players.txt::TextFile::-1::1710859273::0::1::::<><>::
+player_data.json::JSON::-1::1710859273::0::1::::<><>::
+save.txt::TextFile::-1::1710352051::0::1::::<><>::
+::res://assets/::1712570673
+black.png::CompressedTexture2D::9074421730377994317::1710084920::1711724529::1::::<><>::
+blue.png::CompressedTexture2D::5848516371661169182::1710085118::1711724529::1::::<><>::
+fire02.png::CompressedTexture2D::3712016594278636067::1709976456::1711724529::1::::<><>::
+fire09.png::CompressedTexture2D::2939363961988299895::1390972260::1711724529::1::::<><>::
+grey_sliderLeft.png::CompressedTexture2D::8425086767974652235::1710266734::1711724529::1::::<><>::
+Kenney Future.ttf::FontFile::3853189862023724221::1710079612::1711724529::1::::<><>::
+laserLarge_000.ogg::AudioStreamOggVorbis::7922284681292250737::1710087436::1711724529::1::::<><>::
+laserRed06.png::CompressedTexture2D::2863592077163823356::1709998333::1711724529::1::::<><>::
+lowFrequency_explosion_001.ogg::AudioStreamOggVorbis::6208555345195531835::1710087553::1711724529::1::::<><>::
+playerShip1_blue.png::CompressedTexture2D::7998847182629067439::1710010142::1711724529::1::::<><>::
+playerShip2_green.png::CompressedTexture2D::6290239120894779783::1710068694::1711724529::1::::<><>::
+playerShip3_orange.png::CompressedTexture2D::564194567848451633::1710097639::1711724529::1::::<><>::
+sfx_lose.ogg::AudioStreamOggVorbis::7775131511569402652::1710087338::1711724529::1::::<><>::
+spaceShips_007.png::CompressedTexture2D::8824201376590125311::1710006765::1711724529::1::::<><>::
+speed.png::CompressedTexture2D::6993301710107713558::1710086740::1711724529::1::::<><>::
+::res://bins/::1712570674
+::res://bins/android/::1712570673
+::res://bins/linux/::1712570673
+::res://bins/web/::1712570674
+index.apple-touch-icon.png::CompressedTexture2D::5588236912378773958::1711048375::1713089321::1::::<><>::
+index.icon.png::CompressedTexture2D::5622969324007729393::1711048375::1713089321::1::::<><>::
+index.png::CompressedTexture2D::727190057081307289::1711048375::1713089321::1::::<><>::
+::res://bins/windows/::1712570674
+::res://scenes/::1712570675
+Global.gd::GDScript::-1::1710862708::0::1::::<>Node<>::
+::res://scenes/enemy/::1712570675
+diver_enemy.tscn::PackedScene::9046730630448252345::1711724241::0::1::::<><>::uid://pd8o55gxrju0::::res://scenes/enemy/enemy.tscn<>uid://bs5emu32ywmr8::::res://assets/fire02.png<>uid://cvvbk4d8x4m6b::::res://assets/playerShip2_green.png
+enemy.gd::GDScript::-1::1710087923::0::1::::Enemy<>Area2D<>::
+enemy.tscn::PackedScene::1061056072057291293::1711724241::0::1::::<><>::res://scenes/enemy/enemy.gd<>uid://dl7x3yglhd7rf::::res://assets/playerShip1_blue.png
+::res://scenes/game/::1712570675
+game.gd::GDScript::-1::1710856600::0::1::::<>Node2D<>::
+game.tscn::PackedScene::3858734201311440389::1711724241::0::1::::<><>::res://scenes/game/game.gd<>uid://jmhj5nut5pia::::res://scenes/player/Player.tscn<>uid://chi7g8lk61fi::::res://scenes/HUD/hud.tscn<>uid://d15kljqxtg3eb::::res://scenes/enemy/diver_enemy.tscn<>uid://pd8o55gxrju0::::res://scenes/enemy/enemy.tscn<>uid://cq0prh6it8nlf::::res://scenes/gameoverscreen/game_over_screen.tscn<>uid://d2jynur6ayasj::::res://assets/black.png<>uid://c6vuwl8xegtby::::res://assets/speed.png<>uid://dk4u4vfigli0h::::res://assets/laserLarge_000.ogg<>uid://cupp88msqaadv::::res://assets/lowFrequency_explosion_001.ogg<>uid://di1ljryqluaci::::res://assets/sfx_lose.ogg
+::res://scenes/gameoverscreen/::1712570675
+game_over_screen.gd::GDScript::-1::1710410198::0::1::::<>Control<>::
+game_over_screen.tscn::PackedScene::5948413838776668967::1711724241::0::1::::<><>::res://scenes/gameoverscreen/game_over_screen.gd<>uid://bu5rqea3cknxl::::res://assets/Kenney Future.ttf
+::res://scenes/HUD/::1712570675
+hud.gd::GDScript::-1::1710409221::0::1::::<>Control<>::
+hud.tscn::PackedScene::155371579534619858::1711724241::0::1::::<><>::res://scenes/HUD/hud.gd<>uid://bu5rqea3cknxl::::res://assets/Kenney Future.ttf<>uid://dsbf7icaiu1rb::::res://assets/grey_sliderLeft.png
+::res://scenes/laser/::1712570675
+laser.gd::GDScript::-1::1710097129::0::1::::<>Area2D<>::
+laser.tscn::PackedScene::651751584076475360::1710099945::0::1::::<><>::res://scenes/laser/laser.gd<>uid://bg2e7ci8b1y2g::::res://assets/laserRed06.png
+::res://scenes/LoginScreen/::1712570675
+login_screen.gd::GDScript::-1::1710864099::0::1::::<>Control<>::
+login_screen.tscn::PackedScene::1999912890192767637::1711725323::0::1::::<><>::uid://bu5rqea3cknxl::::res://assets/Kenney Future.ttf<>res://scenes/LoginScreen/login_screen.gd<>uid://d2jynur6ayasj::::res://assets/black.png<>uid://c6vuwl8xegtby::::res://assets/speed.png
+::res://scenes/player/::1712570675
+Player.gd::GDScript::-1::1710857287::0::1::::Player<>CharacterBody2D<>::
+Player.tscn::PackedScene::656914813603775404::1711724241::0::1::::<><>::res://scenes/player/Player.gd<>uid://bh435ovm0ffg6::::res://assets/fire09.png<>uid://bs5emu32ywmr8::::res://assets/fire02.png<>uid://dxyrkpnv1ytk6::::res://assets/spaceShips_007.png
